@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="窓ガラスに塗るだけで断熱・遮熱・紫外線99%カット。節電ガラスコートショップ（LARTH株式会社）は東京・全国対応。1㎡12,000円〜、世界35カ国施工実績。">
+  <meta name="keywords" content="節電ガラスコート,窓断熱,遮熱,紫外線カット,省エネ,東京,施工">
+  <title>節電ガラスコートショップ | LARTH株式会社 | 窓から省エネ</title>
+
+  <!-- OGP -->
+  <meta property="og:title" content="節電ガラスコートショップ | LARTH株式会社">
+  <meta property="og:description" content="窓に塗るだけで断熱・遮熱・紫外線99%カット。1㎡12,000円〜、日本全国対応。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://glasscoat-paint.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #00b8a2;
+      --teal-dark: #009688;
+      --teal-light: #e0f7f5;
+      --teal-mid: #4dd0c4;
+      --green-cta: #2db842;
+      --green-dark: #239e37;
+      --text: #1a1a1a;
+      --text-mid: #444;
+      --text-light: #777;
+      --bg: #ffffff;
+      --bg-soft: #f7f6f2;
+      --bg-dark: #1c1c1c;
+      --font-jp: 'Noto Sans JP', sans-serif;
+      --font-en: 'Oswald', sans-serif;
+      --radius: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-jp); color: var(--text); background: var(--bg); line-height: 1.7; overflow-x: hidden; }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Announcement Bar ── */
+    .announce-bar {
+      background: var(--teal);
+      color: #fff;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .logo { flex-shrink: 0; }
+    .logo-main {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--teal);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .logo-sub { font-size: 11px; color: var(--text-light); letter-spacing: 0.05em; }
+
+    nav { flex: 1; display: flex; align-items: center; gap: 4px; }
+    nav a {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 4px;
+      color: var(--text-mid);
+      white-space: nowrap;
+      transition: color 0.2s, background 0.2s;
+    }
+    nav a:hover { color: var(--teal); background: var(--teal-light); }
+
+    .header-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .btn-line {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--green-cta); color: #fff;
+      padding: 9px 18px; border-radius: 24px;
+      font-size: 13px; font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-line:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-line svg { width: 18px; height: 18px; fill: #fff; }
+    .header-ig {
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1.5px solid #ddd; border-radius: 8px;
+      color: var(--text-mid);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .header-ig:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; border: none; background: none; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 580px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: #0d2b2a;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hero-bg-img {
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.55;
+      filter: brightness(0.7);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(105deg, rgba(0,30,28,0.82) 40%, rgba(0,80,72,0.35) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 1200px; margin: 0 auto;
+      padding: 80px 24px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .hero-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,184,162,0.18);
+      border: 1px solid rgba(0,184,162,0.5);
+      color: var(--teal-mid);
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+      width: fit-content;
+    }
+    .hero-label::before { content: ''; width: 6px; height: 6px; background: var(--teal-mid); border-radius: 50%; }
+    .hero-title {
+      font-size: clamp(32px, 5vw, 58px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .hero-title .accent { color: var(--teal-mid); }
+    .hero-subtitle {
+      font-size: clamp(14px, 2vw, 17px);
+      color: rgba(255,255,255,0.75);
+      font-weight: 400;
+      max-width: 480px;
+    }
+    .hero-stats {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      margin: 8px 0;
+    }
+    .hero-stat {
+      display: flex; flex-direction: column;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+      padding: 10px 18px;
+      min-width: 120px;
+    }
+    .hero-stat-val { font-family: var(--font-en); font-size: 22px; font-weight: 700; color: var(--teal-mid); }
+    .hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green-cta); color: #fff;
+      padding: 14px 28px; border-radius: 40px;
+      font-size: 15px; font-weight: 700;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(45,184,66,0.4);
+    }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(45,184,66,0.5); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,184,162,0.15);
+      border: 1.5px solid var(--teal-mid);
+      color: var(--teal-mid);
+      padding: 14px 28px; border-radius: 40px;
+      font-size: 15px; font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { background: rgba(0,184,162,0.25); transform: translateY(-2px); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 13px 24px; border-radius: 40px;
+      font-size: 14px; font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+
+    /* ── News ── */
+    .news-strip {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 14px 24px;
+    }
+    .news-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: flex-start; gap: 20px;
+    }
+    .news-label {
+      flex-shrink: 0;
+      background: var(--teal); color: #fff;
+      font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 3px;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+    .news-list { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+    .news-item { display: flex; gap: 14px; font-size: 13px; }
+    .news-date { color: var(--text-light); white-space: nowrap; flex-shrink: 0; }
+    .news-link { color: var(--text-mid); transition: color 0.2s; }
+    .news-link:hover { color: var(--teal); }
+    .news-more { flex-shrink: 0; font-size: 13px; color: var(--teal); font-weight: 500; white-space: nowrap; margin-top: 2px; }
+    .news-more:hover { text-decoration: underline; }
+
+    /* ── Section commons ── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      text-align: center;
+      font-size: 12px; font-weight: 700;
+      color: var(--teal); letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      text-align: center;
+      font-size: 15px; color: var(--text-mid);
+      max-width: 600px; margin: 0 auto 48px;
+    }
+
+    /* ── Features ── */
+    .features { background: var(--bg-soft); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.10); }
+    .feature-icon {
+      width: 52px; height: 52px; flex-shrink: 0;
+      background: var(--teal-light);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .feature-body h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .feature-body .val { font-family: var(--font-en); font-size: 28px; font-weight: 700; color: var(--teal); line-height: 1; margin-bottom: 4px; }
+    .feature-body p { font-size: 13px; color: var(--text-mid); }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .quality-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+    .quality-card:hover { transform: translateY(-3px); }
+    .quality-icon { font-size: 32px; margin-bottom: 10px; }
+    .quality-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .quality-card .val { font-family: var(--font-en); font-size: 26px; font-weight: 700; color: var(--teal); }
+    .quality-card p { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+
+    /* ── Coverage ── */
+    .coverage { background: var(--teal); color: #fff; padding: 48px 24px; text-align: center; }
+    .coverage .section-title { color: #fff; margin-bottom: 8px; }
+    .coverage-area { font-size: 18px; font-weight: 700; opacity: 0.9; margin-bottom: 24px; }
+
+    /* ── Cases ── */
+    .cases { background: #fff; }
+    .cases-slider {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .case-card {
+      border-radius: 12px; overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .case-card:hover { transform: translateY(-4px); }
+    .case-img {
+      aspect-ratio: 4/3;
+      background: #ddd;
+      position: relative; overflow: hidden;
+    }
+    .case-img img { width: 100%; height: 100%; object-fit: cover; }
+    .case-img-placeholder {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #b2dfdb 0%, #80cbc4 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px;
+    }
+    .case-body { padding: 16px; background: #fff; }
+    .case-body p { font-size: 14px; color: var(--text-mid); font-weight: 500; }
+    .cases-btns { display: flex; gap: 12px; justify-content: center; }
+
+    /* ── Collab ── */
+    .collab { background: var(--bg-soft); }
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .collab-card {
+      border-radius: 12px; overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .collab-card:hover { transform: translateY(-3px); }
+    .collab-img {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, #e0f7f5, #b2dfdb);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; color: var(--teal-dark);
+    }
+    .collab-body { padding: 12px 14px; }
+    .collab-date { font-size: 11px; color: var(--text-light); margin-bottom: 4px; }
+    .collab-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.4; }
+
+    /* ── Media ── */
+    .media { background: #fff; }
+    .media-list { display: flex; flex-direction: column; gap: 16px; max-width: 800px; margin: 0 auto 36px; }
+    .media-item {
+      display: flex; gap: 20px; align-items: center;
+      background: var(--bg-soft);
+      border-radius: 12px; padding: 20px;
+      transition: box-shadow 0.2s;
+    }
+    .media-item:hover { box-shadow: var(--shadow); }
+    .media-icon {
+      width: 64px; height: 64px; flex-shrink: 0;
+      background: var(--teal); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 24px;
+    }
+    .media-body h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .media-body p { font-size: 13px; color: var(--text-mid); }
+
+    /* ── Guide ── */
+    .guide { background: var(--bg-soft); }
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .guide-card {
+      background: #fff;
+      border-radius: 12px; padding: 22px 24px;
+      border-left: 4px solid var(--teal);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .guide-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .guide-card h3 { font-size: 15px; font-weight: 700; color: var(--teal); margin-bottom: 6px; }
+    .guide-card p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+
+    /* ── Voices ── */
+    .voices { background: #fff; }
+    .voices-list { display: flex; flex-direction: column; gap: 16px; max-width: 860px; margin: 0 auto 24px; }
+    .voice-card {
+      background: var(--bg-soft);
+      border-radius: 12px; padding: 24px 28px;
+      position: relative;
+      transition: box-shadow 0.2s;
+    }
+    .voice-card:hover { box-shadow: var(--shadow); }
+    .voice-card::before {
+      content: '"';
+      position: absolute; top: 12px; left: 20px;
+      font-size: 48px; font-weight: 900; color: var(--teal);
+      line-height: 1; opacity: 0.25;
+    }
+    .voice-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+    .voice-title { font-size: 16px; font-weight: 700; color: var(--text); }
+    .voice-date { font-size: 12px; color: var(--text-light); }
+    .voice-meta { font-size: 13px; color: var(--text-mid); margin-bottom: 8px; line-height: 1.8; }
+    .voice-concern { font-size: 13px; color: var(--text); }
+    .voice-concern strong { color: var(--teal-dark); }
+    .voices-more { text-align: center; }
+    .voices-more a { color: var(--teal); font-weight: 600; font-size: 14px; }
+    .voices-more a:hover { text-decoration: underline; }
+
+    /* ── Flow ── */
+    .flow { background: var(--bg-soft); }
+    .flow-list { max-width: 720px; margin: 0 auto 40px; display: flex; flex-direction: column; gap: 0; }
+    .flow-item {
+      display: flex; gap: 20px; position: relative;
+      padding-bottom: 32px;
+    }
+    .flow-item:last-child { padding-bottom: 0; }
+    .flow-step {
+      flex-shrink: 0; width: 48px; height: 48px;
+      background: var(--teal); color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-en); font-size: 15px; font-weight: 700;
+      position: relative; z-index: 1;
+    }
+    .flow-item:not(:last-child) .flow-step::after {
+      content: '';
+      position: absolute; top: 48px; left: 50%; transform: translateX(-50%);
+      width: 2px; height: calc(100% + 32px - 48px);
+      background: linear-gradient(to bottom, var(--teal), transparent);
+    }
+    .flow-body { padding-top: 10px; }
+    .flow-body h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    .flow-body p { font-size: 14px; color: var(--text-mid); }
+    .flow-btns { display: flex; gap: 12px; justify-content: center; }
+
+    /* ── FAQ ── */
+    .faq { background: #fff; }
+    .faq-list { max-width: 760px; margin: 0 auto 32px; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      border: 1.5px solid #e8e8e8;
+      border-radius: 10px; overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-item:hover { border-color: var(--teal); }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 22px; cursor: pointer;
+      font-size: 15px; font-weight: 600;
+      gap: 12px;
+    }
+    .faq-q::before { content: 'Q.'; color: var(--teal); font-family: var(--font-en); font-weight: 700; flex-shrink: 0; }
+    .faq-arrow { flex-shrink: 0; transition: transform 0.3s; color: var(--teal); font-size: 18px; }
+    .faq-a {
+      display: none;
+      padding: 0 22px 18px;
+      font-size: 14px; color: var(--text-mid); line-height: 1.8;
+      border-top: 1px solid #f0f0f0;
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-more { text-align: center; }
+    .faq-more a { color: var(--teal); font-weight: 600; font-size: 14px; }
+    .faq-more a:hover { text-decoration: underline; }
+
+    /* ── Column ── */
+    .column-section { background: var(--bg-soft); }
+    .column-list { max-width: 800px; margin: 0 auto 24px; display: flex; flex-direction: column; gap: 12px; }
+    .column-item {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      background: #fff; border-radius: 10px; padding: 18px 22px;
+      gap: 16px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s;
+    }
+    .column-item:hover { box-shadow: var(--shadow); }
+    .column-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+    .column-body p { font-size: 12px; color: var(--text-light); }
+    .column-date { font-size: 12px; color: var(--text-light); white-space: nowrap; }
+    .column-more { text-align: center; }
+    .column-more a { color: var(--teal); font-weight: 600; font-size: 14px; }
+    .column-more a:hover { text-decoration: underline; }
+
+    /* ── Company ── */
+    .company { background: #fff; }
+    .company-table { max-width: 700px; margin: 0 auto; width: 100%; border-collapse: collapse; }
+    .company-table tr { border-bottom: 1px solid #eee; }
+    .company-table td { padding: 16px 12px; font-size: 15px; vertical-align: top; }
+    .company-table td:first-child { width: 140px; font-weight: 600; color: var(--text-mid); }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--teal-dark) 0%, #004d44 100%);
+      padding: 64px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-banner h2 { font-size: clamp(22px, 3vw, 32px); font-weight: 900; margin-bottom: 10px; }
+    .cta-banner p { font-size: 15px; opacity: 0.85; margin-bottom: 32px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--bg-dark); color: rgba(255,255,255,0.75);
+      padding: 52px 24px 24px;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 1fr 2fr 1fr;
+      gap: 40px; margin-bottom: 40px;
+    }
+    .footer-logo-main { font-size: 18px; font-weight: 900; color: #fff; margin-bottom: 4px; }
+    .footer-logo-sub { font-size: 12px; color: rgba(255,255,255,0.45); }
+    .footer-nav { display: flex; flex-wrap: wrap; gap: 10px 20px; }
+    .footer-nav a { font-size: 13px; color: rgba(255,255,255,0.65); transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--teal-mid); }
+    .footer-area h4 { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+    .footer-area-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .footer-area-list span { font-size: 12px; color: rgba(255,255,255,0.5); }
+    .footer-company { margin-bottom: 20px; font-size: 13px; line-height: 1.9; color: rgba(255,255,255,0.55); }
+    .footer-links { display: flex; gap: 20px; margin-bottom: 24px; }
+    .footer-links a { font-size: 12px; color: rgba(255,255,255,0.45); }
+    .footer-links a:hover { color: var(--teal-mid); }
+    .footer-copy { text-align: center; font-size: 12px; color: rgba(255,255,255,0.35); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+
+    /* ── Floating CTA ── */
+    .float-cta {
+      position: fixed; bottom: 24px; right: 24px;
+      z-index: 200;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .float-btn {
+      display: flex; align-items: center; gap: 8px;
+      padding: 12px 20px; border-radius: 40px;
+      font-size: 14px; font-weight: 700;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.15s, box-shadow 0.2s;
+    }
+    .float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(0,0,0,0.25); }
+    .float-line { background: var(--green-cta); color: #fff; }
+    .float-estimate { background: var(--teal); color: #fff; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      nav.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: #fff; padding: 16px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); z-index: 99; }
+      .features-grid { grid-template-columns: 1fr; }
+      .quality-grid { grid-template-columns: repeat(2, 1fr); }
+      .cases-slider { grid-template-columns: 1fr 1fr; }
+      .collab-grid { grid-template-columns: repeat(2, 1fr); }
+      .guide-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr; gap: 24px; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 56px 16px; }
+      .hero-content { padding: 56px 16px; }
+      .hero-stats { gap: 12px; }
+      .cases-slider { grid-template-columns: 1fr; }
+      .collab-grid { grid-template-columns: repeat(2, 1fr); }
+      .quality-grid { grid-template-columns: 1fr 1fr; }
+      .guide-grid { grid-template-columns: 1fr; }
+      .float-cta { bottom: 16px; right: 12px; }
+      .float-btn { font-size: 13px; padding: 10px 16px; }
+      .header-inner { padding: 0 16px; gap: 12px; }
+    }
+
+    /* ── Scroll animations ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announce-bar">東京都の節電ガラスコートの施工は、節電ガラスコートショップへお任せください</div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-main">節電ガラスコートショップ</div>
+      <div class="logo-sub">LARTH.co.,ltd</div>
+    </a>
+    <nav id="main-nav">
+      <a href="#features">特徴</a>
+      <a href="#cases">施工事例</a>
+      <a href="#collab">コラボ</a>
+      <a href="#media">メディア情報</a>
+      <a href="#guide">ガイド</a>
+      <a href="#voices">お客様の声</a>
+      <a href="#flow">進め方</a>
+      <a href="#faq">FAQ</a>
+      <a href="#column">コラム</a>
+      <a href="#estimate">カンタン見積</a>
+      <a href="#contact">問合せフォーム</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://lin.ee/example" class="btn-line" target="_blank">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        友だち追加
+      </a>
+      <a href="https://instagram.com" class="header-ig" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
+    <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80')"></div>
+    <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-label">窓から省エネ</div>
+    <h1 class="hero-title">
+      暑く、寒い気候を<br>
+      <span class="accent">節電ガラスコート</span>で<br>
+      乗り越えませんか？
+    </h1>
+    <p class="hero-subtitle">世界35カ国で施工実績あり・日本国内シェア9割超。断熱・遮熱・紫外線99%カット。</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-val">UV 99%</span>
+        <span class="hero-stat-label">紫外線カット</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">IR 80%</span>
+        <span class="hero-stat-label">赤外線カット</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">15年</span>
+        <span class="hero-stat-label">耐久性</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">¥12,000〜</span>
+        <span class="hero-stat-label">1㎡あたり</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="https://lin.ee/example" class="btn-primary" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        個人のお問い合わせ
+      </a>
+      <a href="mailto:info@larth.co.jp" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        法人のお問い合わせ
+      </a>
+      <a href="#estimate" class="btn-outline">カンタン見積</a>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<div class="news-strip">
+  <div class="news-inner">
+    <span class="news-label">最新情報</span>
+    <div class="news-list">
+      <div class="news-item"><span class="news-date">2026/3/12</span><a href="#" class="news-link">快適な家づくりは「窓」から！知っておきたい断熱・遮熱の新常識</a></div>
+      <div class="news-item"><span class="news-date">2026/3/11</span><a href="#" class="news-link">窓の暑さ・寒さ対策、どっちが正解？「ペアガラス」と「節電ガラスコート」の決定的な違い</a></div>
+      <div class="news-item"><span class="news-date">2026/3/10</span><a href="#" class="news-link">インスタグラマー apartment301様の施工レポートを公開しました</a></div>
+    </div>
+    <a href="#column" class="news-more">更新履歴一覧へ →</a>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="features fade-in" id="features">
+  <div class="section-inner">
+    <p class="section-label">高性能</p>
+    <h2 class="section-title">窓ガラスに塗るだけで<br>4つの効果を同時実現</h2>
+    <p class="section-desc">窓ガラスに節電ガラスコートを塗ることで、夏の西日対策、紫外線対策、冬の暖房熱の熱逃げ対策となります。</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">☀️</div>
+        <div class="feature-body">
+          <h3>赤外線（熱線）カット</h3>
+          <div class="val">80%<small style="font-size:16px">超カット</small></div>
+          <p>夏の強烈な西日による室温上昇を大幅に抑制。エアコン効率が劇的に改善します。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">❄️</div>
+        <div class="feature-body">
+          <h3>紫外線カット</h3>
+          <div class="val">99%<small style="font-size:16px">超カット</small></div>
+          <p>日焼け・床焼け・家具の色褪せを防止。カーテンなしでも安心して過ごせます。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💧</div>
+        <div class="feature-body">
+          <h3>結露抑制</h3>
+          <div class="val" style="font-size:20px">カビ対策にも</div>
+          <p>冬の窓の結露を大幅に抑制。木枠の腐食やカビの発生を防ぎます。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🐛</div>
+        <div class="feature-body">
+          <h3>防虫効果</h3>
+          <div class="val" style="font-size:20px">UV由来の虫を軽減</div>
+          <p>紫外線をカットすることで、光に集まる虫の侵入を減らします。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-label">品質・コスト</p>
+    <div class="quality-grid">
+      <div class="quality-card">
+        <div class="quality-icon">⏱️</div>
+        <h3>15年耐久</h3>
+        <p>遮熱フィルムの約2倍</p>
+      </div>
+      <div class="quality-card">
+        <div class="quality-icon">🌿</div>
+        <h3>SDGs推進</h3>
+        <p>省エネ商品</p>
+      </div>
+      <div class="quality-card">
+        <div class="quality-icon">💴</div>
+        <h3>低価格</h3>
+        <div class="val">1㎡ 12,000円</div>
+        <p>〜5年以内に償却可能</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage -->
+<div class="coverage fade-in">
+  <h2 class="section-title">施工対応範囲</h2>
+  <p class="coverage-area">日本全国で対応可能</p>
+  <p style="font-size:14px; opacity:0.8;">ローラーで塗布する施工で、大掛かりな工事とならず、お客様の負担も軽減されます。<br>年間25%以上の省エネ効果を見込まれ、省エネ節電対策として注目されています。</p>
+</div>
+
+<!-- Cases -->
+<section class="cases fade-in" id="cases">
+  <div class="section-inner">
+    <p class="section-label">豊富な施工実績</p>
+    <h2 class="section-title">個人から法人まで施工可能</h2>
+    <div class="cases-slider">
+      <div class="case-card">
+        <div class="case-img"><div class="case-img-placeholder">🏢</div></div>
+        <div class="case-body"><p>マンション施工</p></div>
+      </div>
+      <div class="case-card">
+        <div class="case-img"><div class="case-img-placeholder">🪟</div></div>
+        <div class="case-body"><p>マンション（ローラー塗布）</p></div>
+      </div>
+      <div class="case-card">
+        <div class="case-img"><div class="case-img-placeholder">🏠</div></div>
+        <div class="case-body"><p>戸建て施工</p></div>
+      </div>
+    </div>
+    <div class="cases-btns">
+      <a href="#contact" class="btn-primary" style="background:var(--teal);box-shadow:none;">お問い合わせ</a>
+      <a href="#estimate" class="btn-secondary">カンタン見積</a>
+    </div>
+  </div>
+</section>
+
+<!-- Collab -->
+<section class="collab fade-in" id="collab">
+  <div class="section-inner">
+    <h2 class="section-title">コラボレーション実績</h2>
+    <p class="section-desc">インスタグラマーさんのところで、施工させていただきました。実際の施工様子や感想を紹介していただきました投稿を、まとめていますので、是非、ご覧ください。</p>
+    <div class="collab-grid">
+      <div class="collab-card">
+        <div class="collab-img">🏠</div>
+        <div class="collab-body">
+          <p class="collab-date">2026/2/20</p>
+          <p class="collab-name">kei（kei_haus___）様</p>
+        </div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-img">🏡</div>
+        <div class="collab-body">
+          <p class="collab-date">2026/2/25</p>
+          <p class="collab-name">みみ｜中古マンションリフォーム暮らし（@mimi_home）様</p>
+        </div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-img">🪴</div>
+        <div class="collab-body">
+          <p class="collab-date">2026/2/26</p>
+          <p class="collab-name">apartment301｜賃貸リノベと持たない暮らし（apartment_m301）様</p>
+        </div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-img">✨</div>
+        <div class="collab-body">
+          <p class="collab-date">2026/2/6</p>
+          <p class="collab-name">えむ/建築デザイナーのいえ（@vintagemansion_renovation）様</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Media -->
+<section class="media fade-in" id="media">
+  <div class="section-inner">
+    <h2 class="section-title">メディア掲載情報</h2>
+    <p class="section-desc">雑誌掲載やWebサイトで紹介されました！</p>
+    <div class="media-list">
+      <div class="media-item">
+        <div class="media-icon">📋</div>
+        <div class="media-body">
+          <h3>「マイベストプロ」に掲載されました</h3>
+          <p>地元の信頼できる専門家を探せるWebガイド「マイベストプロ」にインタビュー記事が掲載されました。</p>
+        </div>
+      </div>
+      <div class="media-item">
+        <div class="media-icon">📖</div>
+        <div class="media-body">
+          <h3>Goods Press 2024年4月号で紹介されました</h3>
+          <p>「ホーム＆リフォーム Autumn2024暮らしのお悩み解決！快適なおうち時間を実現」コーナーで紹介されました</p>
+        </div>
+      </div>
+      <div class="media-item">
+        <div class="media-icon">▶️</div>
+        <div class="media-body">
+          <h3>YouTube「リフォーム産業フェア2024」で紹介されました</h3>
+          <p>2024年8月6日・7日に東京ビッグサイトで開催されました「リフォーム産業フェア2024」に出展し、Youtubeで紹介されました</p>
+        </div>
+      </div>
+      <div class="media-item">
+        <div class="media-icon">▶️</div>
+        <div class="media-body">
+          <h3>YouTube「ビジ推しめぐり」で紹介されました</h3>
+          <p>節電ガラスコート溶剤のメーカー株式会社スケッチがYouTube「ビジ推しめぐり」で紹介されました</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="#contact" class="btn-primary" style="background:var(--teal);box-shadow:none;display:inline-flex;">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- Guide -->
+<section class="guide fade-in" id="guide">
+  <div class="section-inner">
+    <h2 class="section-title">ガイド</h2>
+    <p class="section-desc">節電ガラスコートについて、特徴や料金など、ご説明します</p>
+    <div class="guide-grid">
+      <a href="#features" class="guide-card">
+        <h3>特徴</h3>
+        <p>節電ガラスコートの特徴をご紹介します。</p>
+      </a>
+      <a href="#cases" class="guide-card">
+        <h3>施工事例</h3>
+        <p>節電ガラスコート施工の実績をご紹介します。</p>
+      </a>
+      <a href="#" class="guide-card">
+        <h3>サンプル</h3>
+        <p>サンプルを使って節電ガラスコートの効果を実感してください</p>
+      </a>
+      <a href="#" class="guide-card">
+        <h3>料金</h3>
+        <p>節電ガラスコート施工にかかる料金について、ご説明します</p>
+      </a>
+      <a href="#flow" class="guide-card">
+        <h3>施工の流れ</h3>
+        <p>節電ガラスコートの施工の流れをご説明します。</p>
+      </a>
+      <a href="#estimate" class="guide-card">
+        <h3>カンタン見積</h3>
+        <p>施工したい窓のサイズを入力して簡易的な見積ができます</p>
+      </a>
+      <a href="#" class="guide-card">
+        <h3>お手入れ</h3>
+        <p>節電ガラスコート施工後のお手入れの方法を説明します。</p>
+      </a>
+      <a href="#" class="guide-card">
+        <h3>注意事項</h3>
+        <p>節電ガラスコートを施工する際の注意事項をご説明します</p>
+      </a>
+      <a href="#" class="guide-card">
+        <h3>選べる2タイプ</h3>
+        <p>透明タイプと磨りガラスタイプの2種類から選べる、仕上げ</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Voices -->
+<section class="voices fade-in" id="voices">
+  <div class="section-inner">
+    <h2 class="section-title">お客様の声</h2>
+    <p class="section-desc">施工後にお客様から公式LINEやメールでいただきましたお客様からの声です</p>
+    <div class="voices-list">
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-title">長年悩んでいた結露問題解決！</span>
+          <span class="voice-date">2025/12/4</span>
+        </div>
+        <div class="voice-meta">お名前：S様　建物種別：リノベした中古マンション　施工箇所：全面</div>
+        <p class="voice-concern"><strong>お悩み：</strong>冬の結露により、木枠や床が傷む。マンション共用部になるため、内窓や窓入れ替えができない。</p>
+      </div>
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-title">お家の熱中症対策！</span>
+          <span class="voice-date">2025/11/1</span>
+        </div>
+        <div class="voice-meta">お名前：S様　建物種別：築20年のマンション　施工箇所：一階全て、吹き抜け窓、2階子ども部屋</div>
+        <p class="voice-concern"><strong>お悩み：</strong>窓際が暑く、熱中症になって倒れたことがあった。日焼け、床焼けが気になる。冬は寒く、暖房の電気代も気になる。</p>
+      </div>
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-title">暑さの体感−5度に！</span>
+          <span class="voice-date">2025/6/21</span>
+        </div>
+        <div class="voice-meta">お名前：S様　建物種別：築20年の戸建て　施工箇所：一階全て、吹き抜け窓、2階子ども部屋</div>
+        <p class="voice-concern"><strong>お悩み：</strong>20年前に貼ったフィルムの劣化。夏の西日が暑い。日焼け、床や家具焼けも気になる。</p>
+      </div>
+    </div>
+    <div class="voices-more"><a href="#voices">お客様の声をもっと見る →</a></div>
+  </div>
+</section>
+
+<!-- Flow -->
+<section class="flow fade-in" id="flow">
+  <div class="section-inner">
+    <h2 class="section-title">ご依頼の流れ</h2>
+    <p class="section-desc">個人の方は公式LINEより、法人の方はメールより、お問い合わせください</p>
+    <div class="flow-list">
+      <div class="flow-item">
+        <div class="flow-step">01</div>
+        <div class="flow-body">
+          <h3>お問い合わせ</h3>
+          <p>個人の方は公式LINEより、法人の方はメールより、お問い合わせください。お客様の負担軽減のため、現地調査はできる限り行わず、お写真や図面、窓枠サイズをお送りいただき、対応しています。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-step">02</div>
+        <div class="flow-body">
+          <h3>日程調整</h3>
+          <p>お見積りについてご検討の上、施工範囲が決まりましたら、日程調整をさせていただきます。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-step">03</div>
+        <div class="flow-body">
+          <h3>体感・施工</h3>
+          <p>お約束の日時に施工担当者がお伺いさせていただき、サンプルガラスでご体感、現地の確認をしたのちに、最終合意をいただいた上で、施工作業をさせていただきます。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-step">04</div>
+        <div class="flow-body">
+          <h3>完了・お支払い</h3>
+          <p>施工完了後は、保証書並びにお手入れの方法についてお伝えさせていただきます。その後、請求書をお送りしますので、ご入金のお手続きをお願いいたします。</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-btns">
+      <a href="#contact" class="btn-primary" style="background:var(--teal);box-shadow:none;">お問い合わせ</a>
+      <a href="#estimate" class="btn-secondary">カンタン見積</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq fade-in" id="faq">
+  <div class="section-inner">
+    <h2 class="section-title">FAQ</h2>
+    <p class="section-desc">よくあるご質問を抜粋しています</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">節電ガラスコートとは何ですか？<span class="faq-arrow">∨</span></div>
+        <div class="faq-a">今ある窓ガラスの内側のガラスに、施工するガラスコートのことです。赤外線をカットするので、夏は太陽からの直射熱が入るのを防ぎ、冬は室内で温めた熱が窓から逃げてしまうのを防ぎます。そのため、空調にかかる負荷が軽減されてエアコン代を15%削減できる省エネ対策用のガラスコートです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">UVカット効果はありますか？<span class="faq-arrow">∨</span></div>
+        <div class="faq-a">はい、紫外線を99%以上カットします。日焼けや床・家具の色褪せ防止に非常に効果的です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">耐久性は？その後はどうなるの？<span class="faq-arrow">∨</span></div>
+        <div class="faq-a">耐久性は約15年で、遮熱フィルムの約2倍の耐久性があります。施工後のお手入れ方法についても施工完了時にご説明します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">結露防止になりますか？<span class="faq-arrow">∨</span></div>
+        <div class="faq-a">はい。冬場の結露を大幅に抑制します。木枠の腐食やカビの発生を防ぐ効果も期待できます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">施工エリアはどこですか？<span class="faq-arrow">∨</span></div>
+        <div class="faq-a">日本全国対応しています。東京都内はもちろん、全国どこでもお伺い可能です。まずはお気軽にお問い合わせください。</div>
+      </div>
+    </div>
+    <div class="faq-more"><a href="#faq">全てのFAQを見る →</a></div>
+  </div>
+</section>
+
+<!-- Column -->
+<section class="column-section fade-in" id="column">
+  <div class="section-inner">
+    <h2 class="section-title">コラム</h2>
+    <div class="column-list">
+      <a href="#" class="column-item">
+        <div class="column-body">
+          <h3>快適な家づくりは「窓」から！知っておきたい断熱・遮熱の新常識</h3>
+          <p>ライター：青柳 真理江</p>
+        </div>
+        <span class="column-date">2026/3/12</span>
+      </a>
+      <a href="#" class="column-item">
+        <div class="column-body">
+          <h3>窓の暑さ・寒さ対策、どっちが正解？「ペアガラス」と「節電ガラスコート」の決定的な違い</h3>
+          <p>ライター：多田</p>
+        </div>
+        <span class="column-date">2026/3/12</span>
+      </a>
+    </div>
+    <div class="column-more"><a href="#column">コラム一覧を見る →</a></div>
+  </div>
+</section>
+
+<!-- Company -->
+<section class="company fade-in" id="company">
+  <div class="section-inner">
+    <h2 class="section-title">会社概要</h2>
+    <table class="company-table">
+      <tr><td>社名</td><td>LARTH株式会社</td></tr>
+      <tr><td>代表</td><td>多田知広</td></tr>
+      <tr><td>事業内容</td><td>ガラスコーティング事業<br>工務店向け営業コンサルティング事業<br>経営コンサルティング事業</td></tr>
+      <tr><td>住所</td><td>〒221-0856<br>神奈川県横浜市神奈川区金港町5-14<br>クアドリフォリオ8階</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<div class="cta-banner fade-in" id="contact">
+  <h2>まずはお気軽にご相談ください</h2>
+  <p>個人の方は公式LINE、法人の方はメールフォームよりお問い合わせください</p>
+  <div class="cta-btns">
+    <a href="https://lin.ee/example" class="btn-primary" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      個人のお問い合わせ（LINE）
+    </a>
+    <a href="mailto:info@larth.co.jp" class="btn-outline">法人のお問い合わせ（メール）</a>
+    <a href="#estimate" class="btn-outline">カンタン見積</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-main">節電ガラスコートショップ</div>
+        <div class="footer-logo-sub">LARTH.co.,ltd</div>
+      </div>
+      <div class="footer-nav">
+        <a href="#features">特徴</a>
+        <a href="#cases">施工事例</a>
+        <a href="#collab">コラボ</a>
+        <a href="#media">メディア情報</a>
+        <a href="#guide">ガイド</a>
+        <a href="#voices">お客様の声</a>
+        <a href="#flow">進め方</a>
+        <a href="#faq">FAQ</a>
+        <a href="#column">コラム</a>
+        <a href="#estimate">カンタン見積</a>
+        <a href="#contact">問合せフォーム</a>
+      </div>
+      <div class="footer-area">
+        <h4>施工エリア</h4>
+        <div class="footer-area-list">
+          <span>千代田区</span><span>中央区</span><span>港区</span><span>新宿区</span>
+          <span>文京区</span><span>台東区</span><span>墨田区</span><span>江東区</span>
+          <span>品川区</span><span>目黒区</span><span>大田区</span><span>世田谷区</span>
+          <span>渋谷区</span><span>中野区</span><span>杉並区</span><span>豊島区</span>
+          <span>北区</span><span>荒川区</span><span>板橋区</span><span>練馬区</span>
+          <span>足立区</span><span>葛飾区</span><span>江戸川区</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-company">
+      会社名　LARTH株式会社　／　代表　多田知広<br>
+      事業内容　ガラスコーティング事業 / 工務店向け営業コンサルティング事業 / 経営コンサルティング事業<br>
+      住所　〒221-0856 神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階
+    </div>
+    <div class="footer-links">
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">特定商取引法に基づく表記</a>
+    </div>
+    <p class="footer-copy">Copyright © 2026. GlassCoating. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<div class="float-cta">
+  <a href="https://lin.ee/example" class="float-btn float-line" target="_blank">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+    LINE相談
+  </a>
+  <a href="#estimate" class="float-btn float-estimate">📝 見積</a>
+</div>
+
+<script>
+  // hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.closest('.faq-item').classList.toggle('open');
+    });
+  });
+
+  // Scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

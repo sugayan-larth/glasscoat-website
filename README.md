@@ -1,0 +1,2 @@
+# glasscoat-website
+リニューアルサイト用
